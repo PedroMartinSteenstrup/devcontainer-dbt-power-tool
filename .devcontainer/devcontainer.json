@@ -1,0 +1,61 @@
+{
+    "name": "dbt-devcontainer",
+    "runArgs": ["--env-file",".devcontainer/devcontainer.env"],
+    // "image": "harbor.example/datacontainers/core/dbt-container-base:1.0.0",
+    "build": {
+        "context": "../image",
+        "dockerfile": "../image/Dockerfile"
+    },
+    "workspaceFolder": "/opt/dbt",
+    "remoteUser": "dbtuser",
+    "mounts": [
+        "source=./snowflake_dbt,target=/opt/dbt,type=bind,consistency=cached",
+        "source=${localEnv:DBT_PRIVATE_KEY_PATH},target=/etc/ssh/snowflake.p8,type=bind,consistency=cached"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "innoverio.vscode-dbt-power-user"
+            ]
+        },
+        "settings": {
+            "terminal.integrated.defaultProfile.linux#": "/bin/bash",
+            "python.pythonPath": "/usr/local/bin/python",
+            "dbt.dbtPythonPathOverride": "/usr/local/bin/python",
+            "files.associations": {
+                "*.sql": "jinja-sql",
+                "*.yml": "jinja-yaml"
+            },
+            "sql.linter.executablePath": "/usr/local/bin/sqlfluff",
+            "sql.format.enable": false,
+            "sql.linter.run": "onType",
+            "files.exclude": {
+                "**/.git": true,
+                "**/.svn": true,
+                "**/.hg": true,
+                "**/CVS": true,
+                "**/.DS_Store": true,
+                "**/__pycache__": true
+            },
+            "yaml.schemas": {
+                "https://raw.githubusercontent.com/dbt-labs/dbt-jsonschema/main/schemas/dbt_yml_files.json": [
+                    "/*.yml",
+                    "!profiles.yml",
+                    "!dbt_project.yml",
+                    "!packages.yml",
+                    "!selectors.yml",
+                    "!profile_template.yml"
+                ],
+                "https://raw.githubusercontent.com/dbt-labs/dbt-jsonschema/main/schemas/dbt_project.json": [
+                    "dbt_project.yml"
+                ],
+                "https://raw.githubusercontent.com/dbt-labs/dbt-jsonschema/main/schemas/selectors.json": [
+                    "selectors.yml"
+                ],
+                "https://raw.githubusercontent.com/dbt-labs/dbt-jsonschema/main/schemas/packages.json": [
+                    "packages.yml"
+                ]
+            }
+        }
+    }
+}

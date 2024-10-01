@@ -1,0 +1,20 @@
+jaffle_shop:
+
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT', 'NULL' ) }}"
+      user: "{{ env_var('DBT_USER') }}"
+      
+      private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH', 'NULL' ) }}"
+      private_key_passphrase: "{{ env_var('DBT_PRIVATE_KEY_PASSPHRASE', 'NULL' ) }}"      
+
+      role: SYSADMIN
+      database: STAGE
+      warehouse: ADMINISTRATING
+      schema: PUBLIC
+      threads: 8
+      client_session_keep_alive: False
+      reuse_connections: True
+      query_tag: "{{ env_var('DBT_QUERY_TAG', 'dbt_container') }}"

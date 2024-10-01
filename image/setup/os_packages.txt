@@ -1,0 +1,7 @@
+ssh-client
+software-properties-common
+make
+build-essential
+ca-certificates
+libpq-dev
+git

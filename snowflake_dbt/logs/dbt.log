@@ -1,0 +1,1267 @@
+[0m20:22:11.399049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6e48d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9a0950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9a0a50>]}
+
+
+============================== 20:22:11.410521 | 8ff9e3dd-4a0e-4917-9836-f7fb73f29641 ==============================
+[0m20:22:11.410521 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:22:11.411443 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/dbt/config', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m20:22:11.418054 [info ] [MainThread]: dbt version: 1.8.7
+[0m20:22:11.418517 [info ] [MainThread]: python version: 3.11.7
+[0m20:22:11.419151 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m20:22:11.419593 [info ] [MainThread]: os info: Linux-6.10.4-linuxkit-x86_64-with-glibc2.31
+[0m20:22:11.420112 [info ] [MainThread]: Using profiles dir at /opt/dbt/config
+[0m20:22:11.420513 [info ] [MainThread]: Using profiles.yml file at /opt/dbt/config/profiles.yml
+[0m20:22:11.420882 [info ] [MainThread]: Using dbt_project.yml file at /opt/dbt/dbt_project.yml
+[0m20:22:11.486096 [info ] [MainThread]: Configuration:
+[0m20:22:11.486652 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m20:22:11.487068 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:22:11.487441 [info ] [MainThread]: Required dependencies:
+[0m20:22:11.487994 [debug] [MainThread]: Executing "git --help"
+[0m20:22:11.508964 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:22:11.509803 [debug] [MainThread]: STDERR: "b''"
+[0m20:22:11.510239 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:22:11.510625 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m20:22:11.510996 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:22:11.511329 [info ] [MainThread]: dbt looked for a profiles.yml file in /opt/dbt/config/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:22:11.513409 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.18221137, "process_user_time": 1.095211, "process_kernel_time": 0.095454, "process_mem_max_rss": "104576", "process_out_blocks": "10", "command_success": false, "process_in_blocks": "0"}
+[0m20:22:11.514260 [debug] [MainThread]: Command `dbt debug` failed at 20:22:11.514079 after 0.18 seconds
+[0m20:22:11.514876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b2ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b25d0>]}
+[0m20:22:11.515336 [debug] [MainThread]: Flushing usage events
+[0m20:55:46.380500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6e4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6e48d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6e4b10>]}
+
+
+============================== 20:55:46.393906 | e1fc898b-077a-4d46-bbee-5270b22c5832 ==============================
+[0m20:55:46.393906 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:55:46.395999 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/dbt/', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:55:46.407637 [info ] [MainThread]: dbt version: 1.8.7
+[0m20:55:46.409577 [info ] [MainThread]: python version: 3.11.7
+[0m20:55:46.410259 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m20:55:46.411278 [info ] [MainThread]: os info: Linux-6.10.4-linuxkit-x86_64-with-glibc2.31
+[0m20:55:46.695443 [info ] [MainThread]: Using profiles dir at /opt/dbt/
+[0m20:55:46.700570 [info ] [MainThread]: Using profiles.yml file at /opt/dbt/profiles.yml
+[0m20:55:46.701653 [info ] [MainThread]: Using dbt_project.yml file at /opt/dbt/dbt_project.yml
+[0m20:55:46.707773 [info ] [MainThread]: adapter type: snowflake
+[0m20:55:46.708246 [info ] [MainThread]: adapter version: 1.8.2
+[0m20:55:46.787735 [info ] [MainThread]: Configuration:
+[0m20:55:46.789620 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:55:46.793231 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:55:46.795580 [info ] [MainThread]: Required dependencies:
+[0m20:55:46.796305 [debug] [MainThread]: Executing "git --help"
+[0m20:55:46.834149 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:55:46.837625 [debug] [MainThread]: STDERR: "b''"
+[0m20:55:46.840623 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:55:46.842511 [info ] [MainThread]: Connection:
+[0m20:55:46.845795 [info ] [MainThread]:   account: SB56101.eu-central-1
+[0m20:55:46.846283 [info ] [MainThread]:   user: PEDRO_MARTIN
+[0m20:55:46.850747 [info ] [MainThread]:   database: STAGE
+[0m20:55:46.851365 [info ] [MainThread]:   warehouse: ADMINISTRATING
+[0m20:55:46.851808 [info ] [MainThread]:   role: SYSADMIN
+[0m20:55:46.853410 [info ] [MainThread]:   schema: PUBLIC
+[0m20:55:46.857192 [info ] [MainThread]:   authenticator: None
+[0m20:55:46.864400 [info ] [MainThread]:   oauth_client_id: None
+[0m20:55:46.874321 [info ] [MainThread]:   query_tag: dbt_container
+[0m20:55:46.875150 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:55:46.876654 [info ] [MainThread]:   host: None
+[0m20:55:46.879761 [info ] [MainThread]:   port: None
+[0m20:55:46.880783 [info ] [MainThread]:   proxy_host: None
+[0m20:55:46.881438 [info ] [MainThread]:   proxy_port: None
+[0m20:55:46.884579 [info ] [MainThread]:   protocol: None
+[0m20:55:46.889090 [info ] [MainThread]:   connect_retries: 1
+[0m20:55:46.890099 [info ] [MainThread]:   connect_timeout: None
+[0m20:55:46.890794 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:55:46.891546 [info ] [MainThread]:   retry_all: False
+[0m20:55:46.892937 [info ] [MainThread]:   insecure_mode: False
+[0m20:55:46.897208 [info ] [MainThread]:   reuse_connections: True
+[0m20:55:46.900177 [info ] [MainThread]: Registered adapter: snowflake=1.8.2
+[0m20:55:46.918613 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:55:46.926172 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:55:46.926778 [debug] [MainThread]: On debug: select 1 as id
+[0m20:55:46.928026 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:55:48.535367 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.607 seconds
+[0m20:55:48.538459 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:55:48.538923 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:55:48.541498 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 2.2667685, "process_user_time": 1.832836, "process_kernel_time": 0.222344, "process_mem_max_rss": "139584", "process_out_blocks": "1141", "process_in_blocks": "0"}
+[0m20:55:48.542202 [debug] [MainThread]: Command `dbt debug` succeeded at 20:55:48.542079 after 2.27 seconds
+[0m20:55:48.543043 [debug] [MainThread]: Connection 'debug' was left open.
+[0m20:55:48.546583 [debug] [MainThread]: On debug: Close
+[0m20:55:48.668942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffbb107d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffa019f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffa01a090>]}
+[0m20:55:48.670065 [debug] [MainThread]: Flushing usage events
+[0m20:55:56.868542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6d3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffe96c1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6d3d90>]}
+
+
+============================== 20:55:56.881324 | dd949bf7-59a3-4a93-99b6-3955c63ddf7f ==============================
+[0m20:55:56.881324 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:55:56.882259 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/dbt/', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:55:57.211437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffa0f93d0>]}
+[0m20:55:57.279781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffbc85ed0>]}
+[0m20:55:57.286728 [info ] [MainThread]: Registered adapter: snowflake=1.8.2
+[0m20:55:57.335514 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m20:55:57.487193 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:55:57.487898 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:55:57.543817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb675ed0>]}
+[0m20:55:57.816842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9a68e50>]}
+[0m20:55:57.822552 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 454 macros
+[0m20:55:57.825015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9e68e10>]}
+[0m20:55:57.838141 [info ] [MainThread]: 
+[0m20:55:57.841790 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:55:57.852925 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_STAGE_PUBLIC'
+[0m20:55:57.882080 [debug] [ThreadPool]: Using snowflake connection "list_STAGE_PUBLIC"
+[0m20:55:57.883219 [debug] [ThreadPool]: On list_STAGE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_STAGE_PUBLIC"} */
+show objects in STAGE.PUBLIC limit 10000
+[0m20:55:57.884177 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:55:58.813245 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.929 seconds
+[0m20:55:58.815964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd949bf7-59a3-4a93-99b6-3955c63ddf7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9c427d0>]}
+[0m20:55:58.816701 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m20:55:58.817301 [info ] [MainThread]: 
+[0m20:55:58.827619 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:55:58.828158 [debug] [Thread-2 (]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:55:58.828557 [info ] [Thread-1 (]: 1 of 20 START test accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+[0m20:55:58.833531 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_STAGE_PUBLIC, now test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3)
+[0m20:55:58.829340 [debug] [Thread-4 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:55:58.829683 [debug] [Thread-5 (]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:55:58.830019 [debug] [Thread-6 (]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:55:58.830405 [info ] [Thread-2 (]: 2 of 20 START test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+[0m20:55:58.831545 [debug] [Thread-7 (]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:55:58.831890 [debug] [Thread-8 (]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:55:58.829012 [debug] [Thread-3 (]: Began running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:55:58.834010 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:55:58.834737 [info ] [Thread-4 (]: 4 of 20 START test not_null_customers_customer_id .............................. [RUN]
+[0m20:55:58.835290 [info ] [Thread-5 (]: 5 of 20 START test not_null_orders_amount ...................................... [RUN]
+[0m20:55:58.835701 [info ] [Thread-6 (]: 6 of 20 START test not_null_orders_bank_transfer_amount ........................ [RUN]
+[0m20:55:58.836276 [debug] [Thread-2 (]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad'
+[0m20:55:58.836925 [info ] [Thread-7 (]: 7 of 20 START test not_null_orders_coupon_amount ............................... [RUN]
+[0m20:55:58.837358 [info ] [Thread-8 (]: 8 of 20 START test not_null_orders_credit_card_amount .......................... [RUN]
+[0m20:55:58.837780 [info ] [Thread-3 (]: 3 of 20 START test accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [RUN]
+[0m20:55:58.867926 [debug] [Thread-3 (]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278'
+[0m20:55:58.868359 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:55:58.865493 [debug] [Thread-5 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_amount.106140f9fd'
+[0m20:55:58.865986 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49'
+[0m20:55:58.866522 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:55:58.867002 [debug] [Thread-7 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625'
+[0m20:55:58.867478 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59'
+[0m20:55:58.863768 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m20:55:58.864595 [debug] [Thread-4 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d'
+[0m20:55:58.874394 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m20:55:58.874856 [debug] [Thread-5 (]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:55:58.875278 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:55:58.878701 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m20:55:58.879094 [debug] [Thread-7 (]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:55:58.879546 [debug] [Thread-8 (]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:55:58.880123 [debug] [Thread-4 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:55:58.888060 [debug] [Thread-5 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m20:55:58.891558 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m20:55:58.898981 [debug] [Thread-7 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m20:55:58.899665 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:55:58.904043 [debug] [Thread-8 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m20:55:58.911505 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:55:58.911235 [debug] [Thread-4 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m20:55:58.913319 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:55:58.916836 [debug] [Thread-5 (]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:55:58.918366 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:55:58.939351 [debug] [Thread-7 (]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:55:58.941297 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m20:55:58.943765 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m20:55:58.944517 [debug] [Thread-8 (]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:55:58.946774 [debug] [Thread-2 (]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m20:55:58.949829 [debug] [Thread-5 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m20:55:58.951909 [debug] [Thread-6 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m20:55:58.952366 [debug] [Thread-4 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:55:58.961867 [debug] [Thread-4 (]: Writing runtime sql for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m20:55:58.957873 [debug] [Thread-8 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m20:55:58.954832 [debug] [Thread-7 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m20:55:58.963891 [debug] [Thread-6 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m20:55:58.970001 [debug] [Thread-6 (]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select bank_transfer_amount
+from STAGE.PUBLIC.orders
+where bank_transfer_amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.965686 [debug] [Thread-5 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m20:55:58.966815 [debug] [Thread-4 (]: Using snowflake connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m20:55:58.968254 [debug] [Thread-2 (]: Using snowflake connection "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m20:55:58.969021 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m20:55:58.964928 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m20:55:58.970765 [debug] [Thread-8 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m20:55:58.971118 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m20:55:58.971753 [debug] [Thread-7 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m20:55:58.974278 [debug] [Thread-5 (]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_amount.106140f9fd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select amount
+from STAGE.PUBLIC.orders
+where amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.975367 [debug] [Thread-4 (]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from STAGE.PUBLIC.customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.977360 [debug] [Thread-2 (]: On test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from STAGE.PUBLIC.stg_orders
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','return_pending','returned'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.977814 [debug] [Thread-3 (]: On test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        payment_method as value_field,
+        count(*) as n_records
+
+    from STAGE.PUBLIC.stg_payments
+    group by payment_method
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'credit_card','coupon','bank_transfer','gift_card'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.978292 [debug] [Thread-1 (]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from STAGE.PUBLIC.orders
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','return_pending','returned'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:58.978689 [debug] [Thread-8 (]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select credit_card_amount
+from STAGE.PUBLIC.orders
+where credit_card_amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:59.051172 [debug] [Thread-7 (]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select coupon_amount
+from STAGE.PUBLIC.orders
+where coupon_amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:55:59.120880 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m20:55:59.129988 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:55:59.131240 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:55:59.131959 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:55:59.136069 [debug] [Thread-8 (]: Opening a new connection, currently in state init
+[0m20:55:59.136631 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m20:56:00.055724 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b76807-0203-2351-0000-cbe5525a591a
+[0m20:56:00.059390 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.070662 [debug] [Thread-1 (]: Database Error in test accepted_values_orders_status__placed__shipped__completed__return_pending__returned (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/accepted_values_orders_1ce6ab157c285f7cd2ac656013faf758.sql
+[0m20:56:00.071827 [error] [Thread-1 (]: 1 of 20 ERROR accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [[31mERROR[0m in 1.24s]
+[0m20:56:00.073116 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:56:00.074589 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:00.075859 [info ] [Thread-1 (]: 9 of 20 START test not_null_orders_customer_id ................................. [RUN]
+[0m20:56:00.076609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3, now test.jaffle_shop.not_null_orders_customer_id.c5f02694af)
+[0m20:56:00.077260 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:00.084073 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m20:56:00.095928 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:00.117151 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m20:56:00.142885 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m20:56:00.163659 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from STAGE.PUBLIC.orders
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.291860 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2352-0000-cbe5525a29ea
+[0m20:56:00.294002 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.301922 [debug] [Thread-1 (]: Database Error in test not_null_orders_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_customer_id.sql
+[0m20:56:00.305474 [error] [Thread-1 (]: 9 of 20 ERROR not_null_orders_customer_id ...................................... [[31mERROR[0m in 0.23s]
+[0m20:56:00.306227 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:00.306697 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:00.307338 [info ] [Thread-1 (]: 10 of 20 START test not_null_orders_gift_card_amount ........................... [RUN]
+[0m20:56:00.307805 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_customer_id.c5f02694af, now test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a)
+[0m20:56:00.308349 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:00.318282 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m20:56:00.331610 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:00.348364 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m20:56:00.383701 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m20:56:00.384391 [debug] [Thread-1 (]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select gift_card_amount
+from STAGE.PUBLIC.orders
+where gift_card_amount is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.405812 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2352-0000-cbe5525a29ee
+[0m20:56:00.411414 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+[0m20:56:00.419375 [debug] [Thread-3 (]: Database Error in test accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/accepted_values_stg_payments_c7909fb19b1f0177c2bf99c7912f06ef.sql
+[0m20:56:00.421343 [debug] [Thread-6 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2351-0000-cbe5525a591e
+[0m20:56:00.422073 [error] [Thread-3 (]: 3 of 20 ERROR accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [[31mERROR[0m in 1.55s]
+[0m20:56:00.427350 [debug] [Thread-6 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.429149 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:56:00.435076 [debug] [Thread-6 (]: Database Error in test not_null_orders_bank_transfer_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_bank_transfer_amount.sql
+[0m20:56:00.435858 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:00.437658 [error] [Thread-6 (]: 6 of 20 ERROR not_null_orders_bank_transfer_amount ............................. [[31mERROR[0m in 1.57s]
+[0m20:56:00.438922 [info ] [Thread-3 (]: 11 of 20 START test not_null_orders_order_id ................................... [RUN]
+[0m20:56:00.441501 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:56:00.445333 [debug] [Thread-6 (]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:00.443385 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278, now test.jaffle_shop.not_null_orders_order_id.cf6c17daed)
+[0m20:56:00.446438 [info ] [Thread-6 (]: 12 of 20 START test not_null_stg_customers_customer_id ......................... [RUN]
+[0m20:56:00.450693 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49, now test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m20:56:00.448218 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:00.451273 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:00.459962 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m20:56:00.462328 [debug] [Thread-4 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2353-0000-cbe55259fb56
+[0m20:56:00.474247 [debug] [Thread-4 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+[0m20:56:00.471729 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m20:56:00.488150 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2352-0000-cbe5525a29f2
+[0m20:56:00.493962 [debug] [Thread-4 (]: Database Error in test not_null_customers_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_customers_customer_id.sql
+[0m20:56:00.495513 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:00.503474 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+[0m20:56:00.516125 [debug] [Thread-7 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2353-0000-cbe55259fb5a
+[0m20:56:00.517251 [error] [Thread-4 (]: 4 of 20 ERROR not_null_customers_customer_id ................................... [[31mERROR[0m in 1.65s]
+[0m20:56:00.522278 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-254d-0000-cbe5525ae202
+[0m20:56:00.540619 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m20:56:00.548394 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:00.549444 [debug] [Thread-8 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2353-0000-cbe55259fb5e
+[0m20:56:00.551029 [debug] [Thread-5 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2351-0000-cbe5525a5922
+[0m20:56:00.562142 [debug] [Thread-2 (]: Database Error in test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/accepted_values_stg_orders_4f514bf94b77b7ea437830eec4421c58.sql
+[0m20:56:00.564109 [debug] [Thread-7 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.567809 [debug] [Thread-4 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:56:00.594904 [debug] [Thread-4 (]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:00.596524 [info ] [Thread-4 (]: 13 of 20 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m20:56:00.581364 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m20:56:00.601739 [debug] [Thread-3 (]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from STAGE.PUBLIC.orders
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.585479 [debug] [Thread-5 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.587586 [error] [Thread-2 (]: 2 of 20 ERROR accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned  [[31mERROR[0m in 1.75s]
+[0m20:56:00.569410 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.580144 [debug] [Thread-6 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m20:56:00.599604 [debug] [Thread-7 (]: Database Error in test not_null_orders_coupon_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_coupon_amount.sql
+[0m20:56:00.600391 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d, now test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64)
+[0m20:56:00.582972 [debug] [Thread-8 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.607922 [debug] [Thread-5 (]: Database Error in test not_null_orders_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_amount.sql
+[0m20:56:00.610102 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:56:00.615315 [debug] [Thread-1 (]: Database Error in test not_null_orders_gift_card_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_gift_card_amount.sql
+[0m20:56:00.619111 [error] [Thread-7 (]: 7 of 20 ERROR not_null_orders_coupon_amount .................................... [[31mERROR[0m in 1.75s]
+[0m20:56:00.622400 [debug] [Thread-4 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:00.630142 [debug] [Thread-6 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m20:56:00.633141 [debug] [Thread-8 (]: Database Error in test not_null_orders_credit_card_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_credit_card_amount.sql
+[0m20:56:00.635280 [error] [Thread-5 (]: 5 of 20 ERROR not_null_orders_amount ........................................... [[31mERROR[0m in 1.77s]
+[0m20:56:00.636632 [debug] [Thread-2 (]: Began running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:00.637840 [error] [Thread-1 (]: 10 of 20 ERROR not_null_orders_gift_card_amount ................................ [[31mERROR[0m in 0.33s]
+[0m20:56:00.639165 [debug] [Thread-7 (]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:56:00.653270 [debug] [Thread-4 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m20:56:00.654461 [debug] [Thread-6 (]: On test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from STAGE.PUBLIC.stg_customers
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.658383 [error] [Thread-8 (]: 8 of 20 ERROR not_null_orders_credit_card_amount ............................... [[31mERROR[0m in 1.79s]
+[0m20:56:00.660411 [debug] [Thread-5 (]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:56:00.661259 [info ] [Thread-2 (]: 14 of 20 START test not_null_stg_payments_payment_id ........................... [RUN]
+[0m20:56:00.686798 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad, now test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075)
+[0m20:56:00.665036 [debug] [Thread-7 (]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:00.672110 [debug] [Thread-8 (]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:56:00.690180 [debug] [Thread-8 (]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:00.684639 [debug] [Thread-4 (]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:00.662321 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:00.688088 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:00.689272 [info ] [Thread-7 (]: 15 of 20 START test relationships_orders_customer_id__customer_id__ref_customers_  [RUN]
+[0m20:56:00.681063 [debug] [Thread-5 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:00.691219 [info ] [Thread-8 (]: 17 of 20 START test unique_orders_order_id ..................................... [RUN]
+[0m20:56:00.699590 [debug] [Thread-4 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m20:56:00.701967 [debug] [Thread-1 (]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:00.722641 [info ] [Thread-1 (]: 18 of 20 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m20:56:00.714177 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625, now test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2)
+[0m20:56:00.716062 [info ] [Thread-5 (]: 16 of 20 START test unique_customers_customer_id ............................... [RUN]
+[0m20:56:00.719795 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59, now test.jaffle_shop.unique_orders_order_id.fed79b3a6e)
+[0m20:56:00.713121 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m20:56:00.727162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a, now test.jaffle_shop.unique_stg_customers_customer_id.c7614daada)
+[0m20:56:00.733613 [debug] [Thread-7 (]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:00.741908 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_amount.106140f9fd, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m20:56:00.737486 [debug] [Thread-4 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m20:56:00.759401 [debug] [Thread-4 (]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from STAGE.PUBLIC.stg_orders
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.743315 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:00.753908 [debug] [Thread-7 (]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m20:56:00.755231 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:00.756835 [debug] [Thread-6 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2352-0000-cbe5525a29f6
+[0m20:56:00.757954 [debug] [Thread-5 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:00.742559 [debug] [Thread-8 (]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:00.770895 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m20:56:00.781529 [debug] [Thread-2 (]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m20:56:00.782043 [debug] [Thread-6 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+[0m20:56:00.783675 [debug] [Thread-7 (]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:00.789293 [debug] [Thread-5 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m20:56:00.795866 [debug] [Thread-8 (]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m20:56:00.800907 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:00.806173 [debug] [Thread-2 (]: Using snowflake connection "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m20:56:00.814415 [debug] [Thread-7 (]: Writing runtime sql for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m20:56:00.816035 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-23e4-0000-cbe5525a76be
+[0m20:56:00.818065 [debug] [Thread-6 (]: Database Error in test not_null_stg_customers_customer_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_customers_customer_id.sql
+[0m20:56:00.824108 [debug] [Thread-1 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m20:56:00.827018 [debug] [Thread-5 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:00.833778 [debug] [Thread-2 (]: On test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from STAGE.PUBLIC.stg_payments
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.835622 [debug] [Thread-8 (]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:00.838401 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.856637 [debug] [Thread-1 (]: Using snowflake connection "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m20:56:00.839154 [error] [Thread-6 (]: 12 of 20 ERROR not_null_stg_customers_customer_id .............................. [[31mERROR[0m in 0.39s]
+[0m20:56:00.848891 [debug] [Thread-5 (]: Writing runtime sql for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m20:56:00.861314 [debug] [Thread-8 (]: Writing runtime sql for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m20:56:00.841128 [debug] [Thread-7 (]: Using snowflake connection "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m20:56:00.865670 [debug] [Thread-3 (]: Database Error in test not_null_orders_order_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_order_id.sql
+[0m20:56:00.866140 [debug] [Thread-1 (]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from STAGE.PUBLIC.stg_customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.869614 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:00.873295 [debug] [Thread-7 (]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from STAGE.PUBLIC.orders
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from STAGE.PUBLIC.customers
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.875606 [error] [Thread-3 (]: 11 of 20 ERROR not_null_orders_order_id ........................................ [[31mERROR[0m in 0.43s]
+[0m20:56:00.876741 [debug] [Thread-8 (]: Using snowflake connection "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m20:56:00.877460 [debug] [Thread-5 (]: Using snowflake connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m20:56:00.880236 [debug] [Thread-6 (]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:00.882866 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:00.886480 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:00.884481 [debug] [Thread-5 (]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from STAGE.PUBLIC.customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.885601 [info ] [Thread-6 (]: 19 of 20 START test unique_stg_orders_order_id ................................. [RUN]
+[0m20:56:00.883419 [debug] [Thread-8 (]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from STAGE.PUBLIC.orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.887084 [info ] [Thread-3 (]: 20 of 20 START test unique_stg_payments_payment_id ............................. [RUN]
+[0m20:56:00.889292 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a)
+[0m20:56:00.894447 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_order_id.cf6c17daed, now test.jaffle_shop.unique_stg_payments_payment_id.3744510712)
+[0m20:56:00.895911 [debug] [Thread-4 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-254d-0000-cbe5525ae206
+[0m20:56:00.896269 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:00.897108 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:00.899427 [debug] [Thread-4 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+[0m20:56:00.904546 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m20:56:00.908524 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m20:56:00.915483 [debug] [Thread-4 (]: Database Error in test not_null_stg_orders_order_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_orders_order_id.sql
+[0m20:56:00.918127 [error] [Thread-4 (]: 13 of 20 ERROR not_null_stg_orders_order_id .................................... [[31mERROR[0m in 0.32s]
+[0m20:56:00.922442 [debug] [Thread-4 (]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:00.922923 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:00.923764 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:00.928298 [debug] [Thread-6 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m20:56:00.935545 [debug] [Thread-3 (]: Writing runtime sql for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m20:56:00.942158 [debug] [Thread-6 (]: Using snowflake connection "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m20:56:00.943143 [debug] [Thread-6 (]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from STAGE.PUBLIC.stg_orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.948442 [debug] [Thread-3 (]: Using snowflake connection "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m20:56:00.950829 [debug] [Thread-3 (]: On test.jaffle_shop.unique_stg_payments_payment_id.3744510712: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    payment_id as unique_field,
+    count(*) as n_records
+
+from STAGE.PUBLIC.stg_payments
+where payment_id is not null
+group by payment_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m20:56:00.970697 [debug] [Thread-7 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2352-0000-cbe5525a29fa
+[0m20:56:00.972312 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-23e4-0000-cbe5525a76c2
+[0m20:56:00.972758 [debug] [Thread-7 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:00.974282 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+[0m20:56:00.985181 [debug] [Thread-7 (]: Database Error in test relationships_orders_customer_id__customer_id__ref_customers_ (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/relationships_orders_customer_id__customer_id__ref_customers_.sql
+[0m20:56:00.989506 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-23e4-0000-cbe5525a76c6
+[0m20:56:00.992202 [debug] [Thread-2 (]: Database Error in test not_null_stg_payments_payment_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_payments_payment_id.sql
+[0m20:56:00.993011 [error] [Thread-7 (]: 15 of 20 ERROR relationships_orders_customer_id__customer_id__ref_customers_ ... [[31mERROR[0m in 0.28s]
+[0m20:56:00.993653 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+[0m20:56:00.994168 [error] [Thread-2 (]: 14 of 20 ERROR not_null_stg_payments_payment_id ................................ [[31mERROR[0m in 0.31s]
+[0m20:56:00.999425 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:00.998626 [debug] [Thread-1 (]: Database Error in test unique_stg_customers_customer_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_customers_customer_id.sql
+[0m20:56:00.995361 [debug] [Thread-7 (]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:01.000912 [error] [Thread-1 (]: 18 of 20 ERROR unique_stg_customers_customer_id ................................ [[31mERROR[0m in 0.27s]
+[0m20:56:01.002266 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:01.069552 [debug] [Thread-3 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-2351-0000-cbe5525a5926
+[0m20:56:01.070801 [debug] [Thread-3 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+[0m20:56:01.074173 [debug] [Thread-3 (]: Database Error in test unique_stg_payments_payment_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_payments_payment_id.sql
+[0m20:56:01.077986 [error] [Thread-3 (]: 20 of 20 ERROR unique_stg_payments_payment_id .................................. [[31mERROR[0m in 0.18s]
+[0m20:56:01.081535 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:01.421523 [debug] [Thread-5 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-254d-0000-cbe5525ae20a
+[0m20:56:01.422101 [debug] [Thread-5 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+[0m20:56:01.425809 [debug] [Thread-5 (]: Database Error in test unique_customers_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/unique_customers_customer_id.sql
+[0m20:56:01.426452 [error] [Thread-5 (]: 16 of 20 ERROR unique_customers_customer_id .................................... [[31mERROR[0m in 0.68s]
+[0m20:56:01.427105 [debug] [Thread-5 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:01.430764 [debug] [Thread-8 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-254d-0000-cbe5525ae20e
+[0m20:56:01.431753 [debug] [Thread-8 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+[0m20:56:01.434972 [debug] [Thread-8 (]: Database Error in test unique_orders_order_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/unique_orders_order_id.sql
+[0m20:56:01.436467 [error] [Thread-8 (]: 17 of 20 ERROR unique_orders_order_id .......................................... [[31mERROR[0m in 0.72s]
+[0m20:56:01.437734 [debug] [Thread-8 (]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:01.455321 [debug] [Thread-6 (]: Snowflake adapter: Snowflake query id: 01b76808-0203-254d-0000-cbe5525ae212
+[0m20:56:01.456455 [debug] [Thread-6 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+[0m20:56:01.461414 [debug] [Thread-6 (]: Database Error in test unique_stg_orders_order_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_orders_order_id.sql
+[0m20:56:01.462822 [error] [Thread-6 (]: 19 of 20 ERROR unique_stg_orders_order_id ...................................... [[31mERROR[0m in 0.57s]
+[0m20:56:01.464719 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:01.468704 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:56:01.469304 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_customers_customer_id.c7614daada' was left open.
+[0m20:56:01.470081 [debug] [MainThread]: On test.jaffle_shop.unique_stg_customers_customer_id.c7614daada: Close
+[0m20:56:01.607441 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075' was left open.
+[0m20:56:01.608024 [debug] [MainThread]: On test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075: Close
+[0m20:56:01.796504 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64' was left open.
+[0m20:56:01.797140 [debug] [MainThread]: On test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64: Close
+[0m20:56:01.895559 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1' was left open.
+[0m20:56:01.896179 [debug] [MainThread]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: Close
+[0m20:56:02.062630 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a' was left open.
+[0m20:56:02.063292 [debug] [MainThread]: On test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a: Close
+[0m20:56:02.183024 [debug] [MainThread]: Connection 'test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was left open.
+[0m20:56:02.183765 [debug] [MainThread]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: Close
+[0m20:56:02.438881 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e' was left open.
+[0m20:56:02.439989 [debug] [MainThread]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: Close
+[0m20:56:02.638946 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_stg_payments_payment_id.3744510712' was left open.
+[0m20:56:02.640541 [debug] [MainThread]: On test.jaffle_shop.unique_stg_payments_payment_id.3744510712: Close
+[0m20:56:02.810728 [info ] [MainThread]: 
+[0m20:56:02.812003 [info ] [MainThread]: Finished running 20 data tests in 0 hours 0 minutes and 4.97 seconds (4.97s).
+[0m20:56:02.818730 [debug] [MainThread]: Command end result
+[0m20:56:02.887020 [info ] [MainThread]: 
+[0m20:56:02.887653 [info ] [MainThread]: [31mCompleted with 20 errors and 0 warnings:[0m
+[0m20:56:02.888311 [info ] [MainThread]: 
+[0m20:56:02.888850 [error] [MainThread]:   Database Error in test accepted_values_orders_status__placed__shipped__completed__return_pending__returned (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/accepted_values_orders_1ce6ab157c285f7cd2ac656013faf758.sql
+[0m20:56:02.889278 [info ] [MainThread]: 
+[0m20:56:02.889932 [error] [MainThread]:   Database Error in test not_null_orders_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_customer_id.sql
+[0m20:56:02.890676 [info ] [MainThread]: 
+[0m20:56:02.891355 [error] [MainThread]:   Database Error in test accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/accepted_values_stg_payments_c7909fb19b1f0177c2bf99c7912f06ef.sql
+[0m20:56:02.891657 [info ] [MainThread]: 
+[0m20:56:02.892004 [error] [MainThread]:   Database Error in test not_null_orders_bank_transfer_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_bank_transfer_amount.sql
+[0m20:56:02.892340 [info ] [MainThread]: 
+[0m20:56:02.892808 [error] [MainThread]:   Database Error in test not_null_customers_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_customers_customer_id.sql
+[0m20:56:02.893382 [info ] [MainThread]: 
+[0m20:56:02.893999 [error] [MainThread]:   Database Error in test accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/accepted_values_stg_orders_4f514bf94b77b7ea437830eec4421c58.sql
+[0m20:56:02.894511 [info ] [MainThread]: 
+[0m20:56:02.895219 [error] [MainThread]:   Database Error in test not_null_orders_coupon_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_coupon_amount.sql
+[0m20:56:02.895684 [info ] [MainThread]: 
+[0m20:56:02.896067 [error] [MainThread]:   Database Error in test not_null_orders_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_amount.sql
+[0m20:56:02.896403 [info ] [MainThread]: 
+[0m20:56:02.896925 [error] [MainThread]:   Database Error in test not_null_orders_credit_card_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_credit_card_amount.sql
+[0m20:56:02.897348 [info ] [MainThread]: 
+[0m20:56:02.897841 [error] [MainThread]:   Database Error in test not_null_orders_gift_card_amount (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_gift_card_amount.sql
+[0m20:56:02.898225 [info ] [MainThread]: 
+[0m20:56:02.898965 [error] [MainThread]:   Database Error in test not_null_stg_customers_customer_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_customers_customer_id.sql
+[0m20:56:02.899325 [info ] [MainThread]: 
+[0m20:56:02.899775 [error] [MainThread]:   Database Error in test not_null_orders_order_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/not_null_orders_order_id.sql
+[0m20:56:02.900511 [info ] [MainThread]: 
+[0m20:56:02.902421 [error] [MainThread]:   Database Error in test not_null_stg_orders_order_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_orders_order_id.sql
+[0m20:56:02.902859 [info ] [MainThread]: 
+[0m20:56:02.903362 [error] [MainThread]:   Database Error in test not_null_stg_payments_payment_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/not_null_stg_payments_payment_id.sql
+[0m20:56:02.903661 [info ] [MainThread]: 
+[0m20:56:02.904040 [error] [MainThread]:   Database Error in test relationships_orders_customer_id__customer_id__ref_customers_ (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/relationships_orders_customer_id__customer_id__ref_customers_.sql
+[0m20:56:02.907248 [info ] [MainThread]: 
+[0m20:56:02.907665 [error] [MainThread]:   Database Error in test unique_stg_customers_customer_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_customers_customer_id.sql
+[0m20:56:02.907956 [info ] [MainThread]: 
+[0m20:56:02.908312 [error] [MainThread]:   Database Error in test unique_stg_payments_payment_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_PAYMENTS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_payments_payment_id.sql
+[0m20:56:02.908579 [info ] [MainThread]: 
+[0m20:56:02.909042 [error] [MainThread]:   Database Error in test unique_customers_customer_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/unique_customers_customer_id.sql
+[0m20:56:02.909396 [info ] [MainThread]: 
+[0m20:56:02.909778 [error] [MainThread]:   Database Error in test unique_orders_order_id (models/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/schema.yml/unique_orders_order_id.sql
+[0m20:56:02.910549 [info ] [MainThread]: 
+[0m20:56:02.911392 [error] [MainThread]:   Database Error in test unique_stg_orders_order_id (models/staging/schema.yml)
+  002003 (42S02): SQL compilation error:
+  Object 'STAGE.PUBLIC.STG_ORDERS' does not exist or not authorized.
+  compiled code at target/run/jaffle_shop/models/staging/schema.yml/unique_stg_orders_order_id.sql
+[0m20:56:02.913283 [info ] [MainThread]: 
+[0m20:56:02.913898 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=20 SKIP=0 TOTAL=20
+[0m20:56:02.915779 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 6.131098, "process_user_time": 3.979909, "process_kernel_time": 0.256243, "process_mem_max_rss": "161476", "process_out_blocks": "2262", "command_success": false, "process_in_blocks": "0"}
+[0m20:56:02.918076 [debug] [MainThread]: Command `dbt test` failed at 20:56:02.917860 after 6.13 seconds
+[0m20:56:02.919857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb9a0bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffed522d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9dc5050>]}
+[0m20:56:02.922501 [debug] [MainThread]: Flushing usage events
+[0m20:56:14.267102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b7b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b31d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb6b3c10>]}
+
+
+============================== 20:56:14.305441 | a41c8958-cae9-4f0a-ac13-9523038d7fd7 ==============================
+[0m20:56:14.305441 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:56:14.306938 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/dbt/', 'debug': 'False', 'version_check': 'True', 'log_path': '/opt/dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt compile', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:56:14.642567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffa4e19d0>]}
+[0m20:56:14.685888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffbc85cd0>]}
+[0m20:56:14.687726 [info ] [MainThread]: Registered adapter: snowflake=1.8.2
+[0m20:56:14.724771 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m20:56:14.831887 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:56:14.833312 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:56:14.876861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9f3b950>]}
+[0m20:56:14.995681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffcdf6150>]}
+[0m20:56:14.996293 [info ] [MainThread]: Found 5 models, 3 seeds, 20 data tests, 454 macros
+[0m20:56:14.996660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffff9f28f90>]}
+[0m20:56:14.998839 [info ] [MainThread]: 
+[0m20:56:15.002580 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:56:15.009461 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_STAGE_PUBLIC'
+[0m20:56:15.024820 [debug] [ThreadPool]: Using snowflake connection "list_STAGE_PUBLIC"
+[0m20:56:15.025338 [debug] [ThreadPool]: On list_STAGE_PUBLIC: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_STAGE_PUBLIC"} */
+show objects in STAGE.PUBLIC limit 10000
+[0m20:56:15.026297 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:56:15.759065 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.732 seconds
+[0m20:56:15.766510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a41c8958-cae9-4f0a-ac13-9523038d7fd7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffb5fda90>]}
+[0m20:56:15.767622 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m20:56:15.770276 [info ] [MainThread]: 
+[0m20:56:15.784605 [debug] [Thread-1 (]: Began running node seed.jaffle_shop.raw_customers
+[0m20:56:15.785119 [debug] [Thread-2 (]: Began running node seed.jaffle_shop.raw_orders
+[0m20:56:15.785655 [debug] [Thread-3 (]: Began running node seed.jaffle_shop.raw_payments
+[0m20:56:15.791470 [debug] [Thread-3 (]: Acquiring new snowflake connection 'seed.jaffle_shop.raw_payments'
+[0m20:56:15.788517 [debug] [Thread-2 (]: Acquiring new snowflake connection 'seed.jaffle_shop.raw_orders'
+[0m20:56:15.786120 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_STAGE_PUBLIC, now seed.jaffle_shop.raw_customers)
+[0m20:56:15.791873 [debug] [Thread-3 (]: Began compiling node seed.jaffle_shop.raw_payments
+[0m20:56:15.792311 [debug] [Thread-2 (]: Began compiling node seed.jaffle_shop.raw_orders
+[0m20:56:15.792690 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop.raw_customers
+[0m20:56:15.800429 [debug] [Thread-3 (]: Began executing node seed.jaffle_shop.raw_payments
+[0m20:56:15.802695 [debug] [Thread-2 (]: Began executing node seed.jaffle_shop.raw_orders
+[0m20:56:15.842104 [debug] [Thread-3 (]: Finished running node seed.jaffle_shop.raw_payments
+[0m20:56:15.841166 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop.raw_customers
+[0m20:56:15.844088 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop.raw_customers
+[0m20:56:15.842951 [debug] [Thread-2 (]: Finished running node seed.jaffle_shop.raw_orders
+[0m20:56:15.844787 [debug] [Thread-5 (]: Began running node model.jaffle_shop.stg_payments
+[0m20:56:15.845456 [debug] [Thread-7 (]: Began running node model.jaffle_shop.stg_customers
+[0m20:56:15.846088 [debug] [Thread-4 (]: Began running node model.jaffle_shop.stg_orders
+[0m20:56:15.846537 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_payments'
+[0m20:56:15.846975 [debug] [Thread-7 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_customers'
+[0m20:56:15.847415 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.jaffle_shop.stg_orders'
+[0m20:56:15.847784 [debug] [Thread-5 (]: Began compiling node model.jaffle_shop.stg_payments
+[0m20:56:15.848120 [debug] [Thread-7 (]: Began compiling node model.jaffle_shop.stg_customers
+[0m20:56:15.848464 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.stg_orders
+[0m20:56:15.865374 [debug] [Thread-5 (]: Writing injected SQL for node "model.jaffle_shop.stg_payments"
+[0m20:56:15.873745 [debug] [Thread-7 (]: Writing injected SQL for node "model.jaffle_shop.stg_customers"
+[0m20:56:15.876527 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.stg_orders"
+[0m20:56:15.878490 [debug] [Thread-5 (]: Began executing node model.jaffle_shop.stg_payments
+[0m20:56:15.879341 [debug] [Thread-7 (]: Began executing node model.jaffle_shop.stg_customers
+[0m20:56:15.880434 [debug] [Thread-5 (]: Finished running node model.jaffle_shop.stg_payments
+[0m20:56:15.880812 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.stg_orders
+[0m20:56:15.881350 [debug] [Thread-7 (]: Finished running node model.jaffle_shop.stg_customers
+[0m20:56:15.882195 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.stg_orders
+[0m20:56:15.882556 [debug] [Thread-1 (]: Began running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:56:15.882885 [debug] [Thread-8 (]: Began running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:15.883226 [debug] [Thread-2 (]: Began running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:15.883732 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:15.884023 [debug] [Thread-5 (]: Began running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:15.884681 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_customers, now test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278)
+[0m20:56:15.885344 [debug] [Thread-4 (]: Began running node model.jaffle_shop.orders
+[0m20:56:15.885070 [debug] [Thread-7 (]: Began running node model.jaffle_shop.customers
+[0m20:56:15.885751 [debug] [Thread-8 (]: Acquiring new snowflake connection 'test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075'
+[0m20:56:15.886087 [debug] [Thread-6 (]: Began running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:56:15.886605 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_orders, now test.jaffle_shop.unique_stg_payments_payment_id.3744510712)
+[0m20:56:15.886977 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop.raw_payments, now test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m20:56:15.887389 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_payments, now test.jaffle_shop.unique_stg_customers_customer_id.c7614daada)
+[0m20:56:15.887822 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:56:15.888281 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_orders, now model.jaffle_shop.orders)
+[0m20:56:15.903444 [debug] [Thread-4 (]: Began compiling node model.jaffle_shop.orders
+[0m20:56:15.889100 [debug] [Thread-8 (]: Began compiling node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:15.889637 [debug] [Thread-6 (]: Acquiring new snowflake connection 'test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad'
+[0m20:56:15.890770 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:15.891960 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:15.892546 [debug] [Thread-5 (]: Began compiling node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:15.903086 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278"
+[0m20:56:15.888652 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.stg_customers, now model.jaffle_shop.customers)
+[0m20:56:15.926497 [debug] [Thread-7 (]: Began compiling node model.jaffle_shop.customers
+[0m20:56:15.913837 [debug] [Thread-8 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075"
+[0m20:56:15.914231 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:56:15.919173 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_payments_payment_id.3744510712"
+[0m20:56:15.922472 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m20:56:15.925616 [debug] [Thread-5 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_customers_customer_id.c7614daada"
+[0m20:56:15.906766 [debug] [Thread-4 (]: Writing injected SQL for node "model.jaffle_shop.orders"
+[0m20:56:15.930509 [debug] [Thread-7 (]: Writing injected SQL for node "model.jaffle_shop.customers"
+[0m20:56:15.931038 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:56:15.940285 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad"
+[0m20:56:15.940999 [debug] [Thread-8 (]: Began executing node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:15.941838 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:15.943679 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:15.944378 [debug] [Thread-5 (]: Began executing node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:15.946620 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278
+[0m20:56:15.947371 [debug] [Thread-4 (]: Began executing node model.jaffle_shop.orders
+[0m20:56:15.947757 [debug] [Thread-7 (]: Began executing node model.jaffle_shop.customers
+[0m20:56:15.948440 [debug] [Thread-8 (]: Finished running node test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075
+[0m20:56:15.948860 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:56:15.949491 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.unique_stg_payments_payment_id.3744510712
+[0m20:56:15.950397 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m20:56:15.951162 [debug] [Thread-5 (]: Finished running node test.jaffle_shop.unique_stg_customers_customer_id.c7614daada
+[0m20:56:15.952600 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:15.953787 [debug] [Thread-4 (]: Finished running node model.jaffle_shop.orders
+[0m20:56:15.954390 [debug] [Thread-7 (]: Finished running node model.jaffle_shop.customers
+[0m20:56:15.954778 [debug] [Thread-8 (]: Began running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:15.955485 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad
+[0m20:56:15.958168 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.3c3820f278, now test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64)
+[0m20:56:15.959038 [debug] [Thread-2 (]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:56:15.959364 [debug] [Thread-3 (]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:56:15.959721 [debug] [Thread-7 (]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:56:15.960036 [debug] [Thread-5 (]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:56:15.960704 [debug] [Thread-4 (]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:56:15.963070 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_payments_payment_id.c19cc50075, now test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a)
+[0m20:56:15.963539 [debug] [Thread-6 (]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:15.967364 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:15.968548 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_payments_payment_id.3744510712, now test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3)
+[0m20:56:15.968991 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop.not_null_orders_amount.106140f9fd)
+[0m20:56:15.969401 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.customers, now test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49)
+[0m20:56:15.970366 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_customers_customer_id.c7614daada, now test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625)
+[0m20:56:15.970781 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.orders, now test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59)
+[0m20:56:15.971158 [debug] [Thread-8 (]: Began compiling node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:15.971636 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.accepted_values_stg_orders_status__placed__shipped__completed__return_pending__returned.080fb20aad, now test.jaffle_shop.not_null_orders_customer_id.c5f02694af)
+[0m20:56:15.975202 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64"
+[0m20:56:15.977366 [debug] [Thread-2 (]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:56:15.978080 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:56:15.978534 [debug] [Thread-7 (]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:56:15.978914 [debug] [Thread-5 (]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:56:15.979384 [debug] [Thread-4 (]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:56:15.985968 [debug] [Thread-8 (]: Writing injected SQL for node "test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a"
+[0m20:56:15.986264 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:15.993686 [debug] [Thread-2 (]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+[0m20:56:15.997191 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+[0m20:56:15.997925 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:16.006381 [debug] [Thread-7 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+[0m20:56:16.011734 [debug] [Thread-5 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+[0m20:56:16.017808 [debug] [Thread-4 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+[0m20:56:16.021872 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+[0m20:56:16.022394 [debug] [Thread-8 (]: Began executing node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:16.024046 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64
+[0m20:56:16.024649 [debug] [Thread-2 (]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:56:16.024972 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:56:16.026710 [debug] [Thread-7 (]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:56:16.027499 [debug] [Thread-5 (]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:56:16.028928 [debug] [Thread-8 (]: Finished running node test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a
+[0m20:56:16.028326 [debug] [Thread-4 (]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:56:16.029339 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:16.029713 [debug] [Thread-1 (]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:16.035516 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_stg_orders_order_id.81cfe2fe64, now test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a)
+[0m20:56:16.031505 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+[0m20:56:16.032251 [debug] [Thread-7 (]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+[0m20:56:16.033072 [debug] [Thread-5 (]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+[0m20:56:16.033646 [debug] [Thread-8 (]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:16.038703 [debug] [Thread-8 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.unique_stg_orders_order_id.e3b841c71a, now test.jaffle_shop.not_null_orders_order_id.cf6c17daed)
+[0m20:56:16.035026 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+[0m20:56:16.030625 [debug] [Thread-2 (]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+[0m20:56:16.035911 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:16.036453 [debug] [Thread-3 (]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:16.037133 [debug] [Thread-7 (]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:56:16.037774 [debug] [Thread-5 (]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:16.034367 [debug] [Thread-4 (]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+[0m20:56:16.039304 [debug] [Thread-8 (]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:16.039972 [debug] [Thread-6 (]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:16.047921 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+[0m20:56:16.049648 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_amount.106140f9fd, now test.jaffle_shop.unique_orders_order_id.fed79b3a6e)
+[0m20:56:16.052381 [debug] [Thread-7 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49, now test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d)
+[0m20:56:16.052822 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625, now test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2)
+[0m20:56:16.058590 [debug] [Thread-8 (]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+[0m20:56:16.059055 [debug] [Thread-6 (]: Re-using an available connection from the pool (formerly test.jaffle_shop.not_null_orders_customer_id.c5f02694af, now test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1)
+[0m20:56:16.060774 [debug] [Thread-3 (]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:16.061650 [debug] [Thread-7 (]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:56:16.062137 [debug] [Thread-5 (]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:16.062517 [debug] [Thread-1 (]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:16.063071 [debug] [Thread-6 (]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:16.063454 [debug] [Thread-8 (]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:16.066537 [debug] [Thread-3 (]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+[0m20:56:16.069545 [debug] [Thread-7 (]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m20:56:16.076139 [debug] [Thread-5 (]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+[0m20:56:16.078761 [debug] [Thread-1 (]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+[0m20:56:16.082203 [debug] [Thread-6 (]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m20:56:16.083646 [debug] [Thread-8 (]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+[0m20:56:16.087791 [debug] [Thread-3 (]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:16.088715 [debug] [Thread-7 (]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:56:16.091670 [debug] [Thread-5 (]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:16.092563 [debug] [Thread-6 (]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:16.097357 [debug] [Thread-6 (]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+[0m20:56:16.095312 [debug] [Thread-7 (]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+[0m20:56:16.096733 [debug] [Thread-5 (]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+[0m20:56:16.093993 [debug] [Thread-3 (]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+[0m20:56:16.101150 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:56:16.101817 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a' was left open.
+[0m20:56:16.102215 [debug] [MainThread]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: Close
+[0m20:56:16.264819 [debug] [MainThread]: Connection 'test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' was properly closed.
+[0m20:56:16.265468 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e' was properly closed.
+[0m20:56:16.265850 [debug] [MainThread]: Connection 'test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' was properly closed.
+[0m20:56:16.266571 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+[0m20:56:16.269245 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59' was properly closed.
+[0m20:56:16.269552 [debug] [MainThread]: Connection 'test.jaffle_shop.not_null_orders_order_id.cf6c17daed' was properly closed.
+[0m20:56:16.269826 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+[0m20:56:16.272955 [debug] [MainThread]: Command end result
+[0m20:56:16.320251 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 2.1419485, "process_user_time": 2.267938, "process_kernel_time": 0.169993, "process_mem_max_rss": "147856", "process_out_blocks": "2180", "process_in_blocks": "0"}
+[0m20:56:16.320949 [debug] [MainThread]: Command `dbt compile` succeeded at 20:56:16.320824 after 2.14 seconds
+[0m20:56:16.321434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffebca010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffed51850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffffed51890>]}
+[0m20:56:16.321848 [debug] [MainThread]: Flushing usage events
